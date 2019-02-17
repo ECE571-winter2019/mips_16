@@ -55,9 +55,9 @@ module mips_16_core_top_tb_0_v;
 		#(CLK_PERIOD/2)
 		#1
 		display_debug_message;
-		//test1;
+		test1;
 		test2;
-		$stop;
+		$finish;
 	end
       
 	task display_debug_message;
