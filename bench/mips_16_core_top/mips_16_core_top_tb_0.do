@@ -1,5 +1,5 @@
 vlib work
-vlog  +incdir+../../rtl ../../rtl/*.v
+vlog  +incdir+../../rtl ../../rtl/*.sv
 vlog  +incdir+../../rtl ./mips_16_core_top_tb_0.v
 
 vsim -t 1ps -novopt -lib work mips_16_core_top_tb_0_v
