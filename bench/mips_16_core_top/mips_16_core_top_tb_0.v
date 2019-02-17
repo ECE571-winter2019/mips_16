@@ -92,7 +92,7 @@ module mips_16_core_top_tb_0_v;
 			#(CLK_PERIOD*100)
 			$monitoroff;
 			display_all_regs;
-			$display("ram[10] = %d", uut.MEM_stage_inst.dmem.ram[10]);
+			$display("ram[10] = %d", uut.MEM_stage_inst.dmem.ram[10]); 
 			//#(CLK_PERIOD*100) test = 0;
 			sys_reset;
 			
