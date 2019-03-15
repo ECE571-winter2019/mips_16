@@ -35,7 +35,7 @@ module alu
 			`ALU_SL	:
 				r = a << b;
 			`ALU_SR	:
-				r = {{16{a[15]}},a} >> b;
+				r = {{16{a[14]}},a} >> b;
 			`ALU_SRU	:
 				r = {16'b0,a} >> b;
 			default	:

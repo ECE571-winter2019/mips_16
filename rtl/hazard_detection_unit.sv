@@ -48,7 +48,7 @@ module hazard_detection_unit
 				decoding_op_src2 == wb_op_dest	
 			)
 		)
-			pipeline_stall_n = 0;
+			pipeline_stall_n = 1;
 		
 		
 	end

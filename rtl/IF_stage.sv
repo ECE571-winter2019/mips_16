@@ -34,7 +34,7 @@ module IF_stage
 			if(instruction_fetch_en) begin
 				if(branch_taken)
 					//don't forget sign bit expansion
-					pc <= pc + {{(`PC_WIDTH-6){branch_offset_imm[5]}}, branch_offset_imm[5:0]};	
+					pc <= pc + {{(`PC_WIDTH-6){branch_offset_imm[4]}}, branch_offset_imm[5:0]};	
 				else
 					pc <= pc + `PC_WIDTH'd1;
 			end

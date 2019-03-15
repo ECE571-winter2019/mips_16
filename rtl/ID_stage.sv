@@ -114,7 +114,6 @@ module ID_stage
 					end
 				`OP_ADD	:
 					begin
-						write_back_en			= 1;		// S3
 						write_back_result_mux	= 0;		// S1
 						ex_alu_cmd				= `ALU_ADD;	// S2
 						alu_src2_mux			= 0;		// S4

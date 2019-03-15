@@ -29,7 +29,7 @@ module instruction_mem		// a rtl simulation rom, rom initial code can be found i
 	    // instruction = rom[rom_addr];
 	// end
 	
-	assign instruction = rom[rom_addr];
+	assign instruction = rom[rom_addr-1];
 	
 	
 endmodule 

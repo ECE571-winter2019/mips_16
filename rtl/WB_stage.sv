@@ -34,12 +34,12 @@ module WB_stage
 	wire		write_back_result_mux = pipeline_reg_in[0];
 	
 	/********************** to register file *********************/
-	assign reg_write_en = write_back_en;
+	assign reg_write_en = !write_back_en;
 	assign reg_write_dest = write_back_dest;
 	assign reg_write_data = (write_back_result_mux)? mem_read_data : ex_alu_result;
 	
 	/********************** to hazard detection unit *********************/
-	assign wb_op_dest = pipeline_reg_in[3:1];
+	assign wb_op_dest = pipeline_reg_in[4:2];
 	
 	
 endmodule 
